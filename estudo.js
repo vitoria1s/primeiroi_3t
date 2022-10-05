@@ -1,32 +1,19 @@
-// alert("Oi! Eu sou o Alert");
-// document.write("Estou na página.");
-// console.log("Eu estou no console.");
-let tabuada = 5;
-function alo(){
-    document.write("<h1>Tabuada do " + tabuada + "</h1>");
-    document.write(tabuada + " x 1 = " + (tabuada*1)+"<br>");
-    document.write(tabuada + " x 2 = " + (tabuada*2)+"<br>");
-    document.write(tabuada + " x 3 = " + (tabuada*3)+"<br>");
-    document.write(tabuada + " x 4 = " + (tabuada*4)+"<br>");
-    document.write(tabuada + " x 5 = " + (tabuada*5)+"<br>");
-    document.write(tabuada + " x 6 = " + (tabuada*6)+"<br>");
-    document.write(tabuada + " x 7 = " + (tabuada*7)+"<br>");
-    document.write(tabuada + " x 8 = " + (tabuada*8)+"<br>");
-    document.write(tabuada + " x 9 = " + (tabuada*9)+"<br>");
-    document.write(tabuada + " x 10 = " + (tabuada*10));
-}
-// for(inicio,validacao,manutencao)
-function escreva (){
-    for(var i=1; i <= 10; i++){
-        for(var j = 1; j <=10 j++){
-            document.write(i + " x " + j + " = " + (j*i)+"<br>");
-        }
-        document.write("<br>");
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro Trimestre</title>
+    <script src="estudo.js"></script>
 
-function quadrado(){
-    for(var i = 2; i < 11; i++){
-        document.write("o quadrado de " +  i + " e " + (i*i)+"<br>");
-    }
-}
+</head>
+<body
+
+Valor: <input id="valor" type="text"> <br>
+Taxa de juros: <input id="juros" type="text"> <br>
+<button onclick="total()">Enviar</button>
+
+</body>  
+</html>
+
