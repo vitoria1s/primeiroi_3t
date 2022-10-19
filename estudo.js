@@ -38,6 +38,14 @@ function quadrado(){
 function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
+
+     if(!Number(val)){
+         alert("O valor deve ser um número.");
+         document.getElementById("valor").value = "";
+         document.getElementById("valor").focus();
+         return
+     }
+
     let resultado = (val * (ju/100+1)) + val;
     document.write("O total é de:" + resultado);
 }
@@ -55,7 +63,7 @@ function media(){
     let n2 = document.getElementById("b2").value;
     let n3 = document.getElementById("b3").value;
     let n4 = document.getElementById("b4").value;
-    let r = Number(n1) + Number(n2) + Number(n3) + Number(n4))/4;
+    let r = Number(n1) + Number(n2) + Number(n3) + Number(n4)/4;
     document.getElementById("resultado").innerHTML = r;
 }
 function necessário(){
@@ -63,6 +71,6 @@ function necessário(){
     let n2 = document.getElementById("b2").value;
     let n3 = document.getElementById("b3").value;
     let n4 = document.getElementById("b4").value;
-    let r = 240 - Number(n1) + Number(n2) + Number(n3) + Number(n4))
+    let r = 240 - Number(n1) + Number(n2) + Number(n3) + Number(n4);
     document.getElementById("resultado").innerHTML = r;
 }
